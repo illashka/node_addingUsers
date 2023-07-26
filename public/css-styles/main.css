@@ -1,0 +1,26 @@
+.userList{
+    font-family: sans-serif;
+    color: rgb(26, 24, 24);
+}
+
+.btn {
+    font-size: 20px;
+    padding: 20px 40px;
+    background-color: rgb(107, 11, 224);
+    border-radius: 28px;
+    color: white;
+    border: solid black;
+}
+
+.btn:hover{
+    background-color: white;
+    color: rgb(107, 11, 224);
+}
+
+input[type=text]{
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 20px 40px;
+    font-size: 20px;
+    margin: 0 20px;
+}
