@@ -15,6 +15,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(adminRouter.router);
 
+app.get('/', (req, res, next) => {
+    const data = adminRouter.data;
+    res.render('main-page', {nick: data});
+});
+
 app.use((req, res, next) => {
     res.render('404');
 });

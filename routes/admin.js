@@ -15,8 +15,8 @@ router.post('/adding-users', (req, res, next) => {
     res.redirect('/');
 });
 
-router.get('/', (req, res, next) => {
-    res.render('main-page', {nick: data});
-});
+// router.get('/', (req, res, next) => {
+//     res.render('main-page', {nick: data});
+// });
 
 module.exports = {router, data};

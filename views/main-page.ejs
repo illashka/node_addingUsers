@@ -8,5 +8,11 @@
 </head>
 <body>
     <h1 class="userList">List of users:</h1>
+    <ul>
+        <% for (let item of nick) { %>
+            <li> <%=item.username%> </li>
+        <% } %>
+    </ul>
+
 </body>
 </html>
