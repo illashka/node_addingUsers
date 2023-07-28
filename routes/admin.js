@@ -7,7 +7,7 @@ const router = express.Router();
 const data = [];
 
 router.get('/add-users', (req, res, next) => {
-    res.render('add-users', {pageTitle: 'Adding users'});
+    res.render('add-users', {pageTitle: 'Adding users', path: '/add-users'});
 });
 
 router.post('/adding-users', (req, res, next) => {

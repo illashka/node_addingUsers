@@ -17,11 +17,11 @@ app.use(adminRouter.router);
 
 app.get('/', (req, res, next) => {
     const data = adminRouter.data;
-    res.render('main-page', {nick: data, pageTitle: 'List of users'});
+    res.render('main-page', {nick: data, pageTitle: 'List of users', path: '/'});
 });
 
 app.use((req, res, next) => {
-    res.render('404', {pageTitle: '404'});
+    res.render('404', {pageTitle: '404', path: 'nothing'});
 });
 
 app.listen(3000);

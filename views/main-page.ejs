@@ -2,10 +2,11 @@
 
 </head>
 <body>
+    <%- include('includes/nav.ejs')%>
     <h1 class="userList">List of users:</h1>
-    <ul>
+    <ul class="user-list">
         <% for (let item of nick) { %>
-            <li> <%=item.username%> </li>
+            <li class="user-list__item"> <%=item.username%> </li>
         <% } %>
     </ul>
 

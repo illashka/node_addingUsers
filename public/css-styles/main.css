@@ -10,6 +10,7 @@
     border-radius: 28px;
     color: white;
     border: solid black;
+    margin: 1rem 0;
 }
 
 .btn:hover{
@@ -25,7 +26,40 @@ input[type=text]{
     margin: 0 20px;
 }
 
-ul{
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    width: 100%;
+}
+
+.main-header__item {
+    display: inline-grid;
+    margin-right: 1rem;
+}
+
+.main-header__item a {
+    text-decoration: none;
+    color: white;
+}
+.main-header__item a.active {
+    color: rgb(229, 255, 0);
+}
+
+.main-header__item-list {
+    list-style-type: none;
+    font-family: sans-serif;
+    font-size: 26px;
+    background-color: rgb(107, 11, 224);
+    color: white;
+    margin: 0;
+    padding: 1rem;
+}
+
+.user-list,
+.user-list__item{
     list-style-type: circle;
     font-family: sans-serif;
     font-size: 20px;
