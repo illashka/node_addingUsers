@@ -4,10 +4,14 @@
 <body>
     <%- include('includes/nav.ejs')%>
     <h1 class="userList">List of users:</h1>
+    <% if (nick.length > 0) {%>
     <ul class="user-list">
         <% for (let item of nick) { %>
             <li class="user-list__item"> <%=item.username%> </li>
         <% } %>
     </ul>
+    <% } else { %>
+        <p class="empty__list">Still empty</p>
+        <% } %>
 
 <%- include('includes/end.ejs') %>
