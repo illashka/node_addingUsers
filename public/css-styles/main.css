@@ -68,3 +68,9 @@ body {
 h1 {
     padding-left: 1rem;
 }
+
+.error__404 {
+    font-family: sans-serif;
+    font-size: 26px;
+    text-align: center;
+}
